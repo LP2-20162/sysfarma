@@ -1,0 +1,560 @@
+[2016-10-30 14:53:07] DEBUG [django.db.backends:89] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-10-30 14:53:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-10-30 14:53:29] WARNING [django.request:182] Not Found: /
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\\\sysfarma\\\\almacen_service\\\\almacen_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-10-30 14:53:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': '', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\\\sysfarma\\\\almacen_service\\\\almacen_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-10-30 14:53:33] WARNING [django.request:182] Not Found: /favicon.ico
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\sysfarma\\\\ve_almacen\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\\\sysfarma\\\\almacen_service\\\\almacen_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2016-10-30 14:53:33] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\handlers\base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\core\urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\sysfarma\\ve_almacen\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'almacen_service_apps.auths_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\sysfarma\\almacen_service\\almacen_service_apps\\catalogo_api\\urls.py'> (None:None) ^api/catalogo/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'almacen_service_apps.catalogo_api.urls' from 'E:\\\\sysfarma\\\\almacen_service\\\\almacen_service_apps\\\\catalogo_api\\\\urls.py'> (None:None) ^api/catalogo/>"
+[2016-10-30 14:53:43] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-10-30 19:53:43.203299' AND "django_session"."session_key" = '4d2rqv5mdqjbl57a548hh71sys2zoc51'); args=('2016-10-30 19:53:43.203299', '4d2rqv5mdqjbl57a548hh71sys2zoc51')
+[2016-10-30 14:53:43] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03BC0198>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03C102B0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03B90D10>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30, 'SUCCESS': 25}, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03C10390>>}, {}, {'site_url': '/', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02E029D0>, 'LANGUAGE_CODE': 'en-us', 'title': 'Log in', 'LANGUAGE_BIDI': False, 'app_path': '/admin/login/?next=/admin/', 'available_apps': [], 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_name': 'localhost:8000', 'has_permission': False, 'next': '/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02E02A90>, 'site': <django.contrib.sites.requests.RequestSite object at 0x03C104D0>}]"
+[2016-10-30 14:53:43] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03BC0198>>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03C102B0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03B90D10>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'INFO': 20, 'DEBUG': 10, 'WARNING': 30, 'SUCCESS': 25}, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03C10390>>}, {}, {'site_url': '/', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02E029D0>, 'LANGUAGE_CODE': 'en-us', 'title': 'Log in', 'LANGUAGE_BIDI': False, 'app_path': '/admin/login/?next=/admin/', 'available_apps': [], 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'site_name': 'localhost:8000', 'has_permission': False, 'next': '/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02E02A90>, 'site': <django.contrib.sites.requests.RequestSite object at 0x03C104D0>}]"
+[2016-10-30 14:54:00] DEBUG [django.db.backends:89] (0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-10-30 14:54:00] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv' LIMIT 1; args=('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv',)
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-13 19:54:09.080779'; args=('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-13 19:54:09.080779')
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv'; args=('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv',)
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv'); args=('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv',)
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) UPDATE "auths_user" SET "last_login" = '2016-10-30 19:54:09.603809' WHERE "auths_user"."id" = '98c929be19fb4598b30233dd1ddbfcfd'; args=('2016-10-30 19:54:09.603809', '98c929be19fb4598b30233dd1ddbfcfd')
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) UPDATE "django_session" SET "session_data" = 'MmQ4ZjkwN2IzN2ViMTU2ZWFhZWYwNTIyZDI3NzM3MTBiMTI4NzEwZDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3ZmM3NWRhMjRkYWVjMjdmMGUxMTc5ODYxMzYyYzFhMDliZWI2YTEiLCJfYXV0aF91c2VyX2lkIjoiOThjOTI5YmUtMTlmYi00NTk4LWIzMDItMzNkZDFkZGJmY2ZkIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQifQ==', "expire_date" = '2016-11-13 19:54:09.737817' WHERE "django_session"."session_key" = '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv'; args=('MmQ4ZjkwN2IzN2ViMTU2ZWFhZWYwNTIyZDI3NzM3MTBiMTI4NzEwZDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3ZmM3NWRhMjRkYWVjMjdmMGUxMTc5ODYxMzYyYzFhMDliZWI2YTEiLCJfYXV0aF91c2VyX2lkIjoiOThjOTI5YmUtMTlmYi00NTk4LWIzMDItMzNkZDFkZGJmY2ZkIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQifQ==', '2016-11-13 19:54:09.737817', '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv')
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv', 'MmQ4ZjkwN2IzN2ViMTU2ZWFhZWYwNTIyZDI3NzM3MTBiMTI4NzEwZDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3ZmM3NWRhMjRkYWVjMjdmMGUxMTc5ODYxMzYyYzFhMDliZWI2YTEiLCJfYXV0aF91c2VyX2lkIjoiOThjOTI5YmUtMTlmYi00NTk4LWIzMDItMzNkZDFkZGJmY2ZkIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQifQ==', '2016-11-13 19:54:09.737817'; args=('4cl2z3d0mn6qj5nrdxywzd7gskxsisrv', 'MmQ4ZjkwN2IzN2ViMTU2ZWFhZWYwNTIyZDI3NzM3MTBiMTI4NzEwZDp7Il9hdXRoX3VzZXJfaGFzaCI6Ijg3ZmM3NWRhMjRkYWVjMjdmMGUxMTc5ODYxMzYyYzFhMDliZWI2YTEiLCJfYXV0aF91c2VyX2lkIjoiOThjOTI5YmUtMTlmYi00NTk4LWIzMDItMzNkZDFkZGJmY2ZkIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQifQ==', '2016-11-13 19:54:09.737817')
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-10-30 19:54:09.877825' AND "django_session"."session_key" = '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv'); args=('2016-10-30 19:54:09.877825', '4cl2z3d0mn6qj5nrdxywzd7gskxsisrv')
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = '98c929be19fb4598b30233dd1ddbfcfd'; args=('98c929be19fb4598b30233dd1ddbfcfd',)
+[2016-10-30 14:54:09] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03C3CD90>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03A50348>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03C9D170>, 'request': <WSGIRequest: GET '/admin/'>}, {}, {'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC2AD0>, 'LANGUAGE_BIDI': False, 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82030>, 'has_module_perms': True, 'app_label': 'auth', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC30>, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC10>, 'admin_url': '/admin/auth/permission/', 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auth/'}, {'name': 'Auths', 'has_module_perms': True, 'app_label': 'auths', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC90>, 'admin_url': '/admin/auths/hierarchytype/', 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EE30>, 'admin_url': '/admin/auths/hierarchy/', 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED70>, 'admin_url': '/admin/auths/menu/', 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECD0>, 'admin_url': '/admin/auths/person/', 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03A7B8F0>, 'admin_url': '/admin/auths/userhierarchygroup/', 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EDB0>, 'admin_url': '/admin/auths/userhierarchypermission/', 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECB0>, 'admin_url': '/admin/auths/user/', 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auths/'}, {'name': 'Catalogo', 'has_module_perms': True, 'app_label': 'catalogo', 'models': [{'name': 'Autores', 'admin_url': '/admin/catalogo/autor/', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Categorias', 'admin_url': '/admin/catalogo/categoria/', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Libros', 'admin_url': '/admin/catalogo/libro/', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/catalogo/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82050>, 'has_module_perms': True, 'app_label': 'contenttypes', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECF0>, 'admin_url': '/admin/contenttypes/contenttype/', 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/contenttypes/'}, {'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_label': 'oauth2_provider', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED30>, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EB30>, 'admin_url': '/admin/oauth2_provider/application/', 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED10>, 'admin_url': '/admin/oauth2_provider/grant/', 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EBF0>, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/oauth2_provider/'}], 'site_url': '/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC2A90>, 'LANGUAGE_CODE': 'en-us', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC29D0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82030>, 'has_module_perms': True, 'app_label': 'auth', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9D0>, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E970>, 'admin_url': '/admin/auth/permission/', 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auth/'}, {'name': 'Auths', 'has_module_perms': True, 'app_label': 'auths', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA50>, 'admin_url': '/admin/auths/hierarchytype/', 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EAF0>, 'admin_url': '/admin/auths/hierarchy/', 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EAB0>, 'admin_url': '/admin/auths/menu/', 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03CE18B0>, 'admin_url': '/admin/auths/person/', 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9B0>, 'admin_url': '/admin/auths/userhierarchygroup/', 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA70>, 'admin_url': '/admin/auths/userhierarchypermission/', 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA30>, 'admin_url': '/admin/auths/user/', 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auths/'}, {'name': 'Catalogo', 'has_module_perms': True, 'app_label': 'catalogo', 'models': [{'name': 'Autores', 'admin_url': '/admin/catalogo/autor/', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Categorias', 'admin_url': '/admin/catalogo/categoria/', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Libros', 'admin_url': '/admin/catalogo/libro/', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/catalogo/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82050>, 'has_module_perms': True, 'app_label': 'contenttypes', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E990>, 'admin_url': '/admin/contenttypes/contenttype/', 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/contenttypes/'}, {'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_label': 'oauth2_provider', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA10>, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03C3CF70>, 'admin_url': '/admin/oauth2_provider/application/', 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9F0>, 'admin_url': '/admin/oauth2_provider/grant/', 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03C3C530>, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/oauth2_provider/'}]}]"
+[2016-10-30 14:54:09] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\sysfarma\ve_almacen\lib\site-packages\django\template\base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'False': False, 'True': True, 'None': None}, {'DEFAULT_MESSAGE_LEVELS': {'WARNING': 30, 'SUCCESS': 25, 'DEBUG': 10, 'INFO': 20, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03C3CD90>, 'user': <SimpleLazyObject: <User: admin>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x03A50348>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x03C9D170>, 'request': <WSGIRequest: GET '/admin/'>}, {}, {'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC2AD0>, 'LANGUAGE_BIDI': False, 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82030>, 'has_module_perms': True, 'app_label': 'auth', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC30>, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC10>, 'admin_url': '/admin/auth/permission/', 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auth/'}, {'name': 'Auths', 'has_module_perms': True, 'app_label': 'auths', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EC90>, 'admin_url': '/admin/auths/hierarchytype/', 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EE30>, 'admin_url': '/admin/auths/hierarchy/', 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED70>, 'admin_url': '/admin/auths/menu/', 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECD0>, 'admin_url': '/admin/auths/person/', 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03A7B8F0>, 'admin_url': '/admin/auths/userhierarchygroup/', 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EDB0>, 'admin_url': '/admin/auths/userhierarchypermission/', 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECB0>, 'admin_url': '/admin/auths/user/', 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auths/'}, {'name': 'Catalogo', 'has_module_perms': True, 'app_label': 'catalogo', 'models': [{'name': 'Autores', 'admin_url': '/admin/catalogo/autor/', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Categorias', 'admin_url': '/admin/catalogo/categoria/', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Libros', 'admin_url': '/admin/catalogo/libro/', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/catalogo/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82050>, 'has_module_perms': True, 'app_label': 'contenttypes', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ECF0>, 'admin_url': '/admin/contenttypes/contenttype/', 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/contenttypes/'}, {'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_label': 'oauth2_provider', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED30>, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EB30>, 'admin_url': '/admin/oauth2_provider/application/', 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0ED10>, 'admin_url': '/admin/oauth2_provider/grant/', 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EBF0>, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/oauth2_provider/'}], 'site_url': '/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC2A90>, 'LANGUAGE_CODE': 'en-us', 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02DC29D0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82030>, 'has_module_perms': True, 'app_label': 'auth', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9D0>, 'admin_url': '/admin/auth/group/', 'object_name': 'Group', 'add_url': '/admin/auth/group/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E970>, 'admin_url': '/admin/auth/permission/', 'object_name': 'Permission', 'add_url': '/admin/auth/permission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auth/'}, {'name': 'Auths', 'has_module_perms': True, 'app_label': 'auths', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA50>, 'admin_url': '/admin/auths/hierarchytype/', 'object_name': 'HierarchyType', 'add_url': '/admin/auths/hierarchytype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EAF0>, 'admin_url': '/admin/auths/hierarchy/', 'object_name': 'Hierarchy', 'add_url': '/admin/auths/hierarchy/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EAB0>, 'admin_url': '/admin/auths/menu/', 'object_name': 'Menu', 'add_url': '/admin/auths/menu/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03CE18B0>, 'admin_url': '/admin/auths/person/', 'object_name': 'Person', 'add_url': '/admin/auths/person/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9B0>, 'admin_url': '/admin/auths/userhierarchygroup/', 'object_name': 'UserHierarchyGroup', 'add_url': '/admin/auths/userhierarchygroup/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA70>, 'admin_url': '/admin/auths/userhierarchypermission/', 'object_name': 'UserHierarchyPermission', 'add_url': '/admin/auths/userhierarchypermission/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA30>, 'admin_url': '/admin/auths/user/', 'object_name': 'User', 'add_url': '/admin/auths/user/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/auths/'}, {'name': 'Catalogo', 'has_module_perms': True, 'app_label': 'catalogo', 'models': [{'name': 'Autores', 'admin_url': '/admin/catalogo/autor/', 'object_name': 'Autor', 'add_url': '/admin/catalogo/autor/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Categorias', 'admin_url': '/admin/catalogo/categoria/', 'object_name': 'Categoria', 'add_url': '/admin/catalogo/categoria/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': 'Libros', 'admin_url': '/admin/catalogo/libro/', 'object_name': 'Libro', 'add_url': '/admin/catalogo/libro/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/catalogo/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x02D82050>, 'has_module_perms': True, 'app_label': 'contenttypes', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E990>, 'admin_url': '/admin/contenttypes/contenttype/', 'object_name': 'ContentType', 'add_url': '/admin/contenttypes/contenttype/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/contenttypes/'}, {'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'app_label': 'oauth2_provider', 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0EA10>, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'object_name': 'AccessToken', 'add_url': '/admin/oauth2_provider/accesstoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03C3CF70>, 'admin_url': '/admin/oauth2_provider/application/', 'object_name': 'Application', 'add_url': '/admin/oauth2_provider/application/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03D0E9F0>, 'admin_url': '/admin/oauth2_provider/grant/', 'object_name': 'Grant', 'add_url': '/admin/oauth2_provider/grant/add/', 'perms': {'change': True, 'add': True, 'delete': True}}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x03C3C530>, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'object_name': 'RefreshToken', 'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'perms': {'change': True, 'add': True, 'delete': True}}], 'app_url': '/admin/oauth2_provider/'}]}]"
+[2016-10-30 14:54:09] DEBUG [django.db.backends:89] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = '98c929be19fb4598b30233dd1ddbfcfd' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('98c929be19fb4598b30233dd1ddbfcfd',)

@@ -7,12 +7,12 @@ from django.db.models import Q
 from operator import __or__ as OR
 from functools import reduce
 
-from ioteca_service_apps.catalogo.models.autor import Autor
-from ioteca_service_apps.catalogo.models.libro import Libro
+from almacen_service_apps.catalogo.models.autor import Autor
+from almacen_service_apps.catalogo.models.libro import Libro
 
-from ioteca_service_apps.utils.security import log_params
-from ioteca_service_apps.utils.permissions import ModelPermission
-from ioteca_service_apps.utils.pagination import ModelPagination
+from almacen_service_apps.utils.security import log_params
+from almacen_service_apps.utils.permissions import ModelPermission
+from almacen_service_apps.utils.pagination import ModelPagination
 
 
 from rest_framework import permissions

@@ -44,7 +44,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/index.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/index.html"
     },
     "catalogo.catalogo.categoriasNew": {
         "url": "/categorias/new",
@@ -52,7 +52,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
     },
     "catalogo.catalogo.categoriasEdit": {
         "url": "/categorias/:id/edit",
@@ -60,7 +60,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Categorías"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
     },
 
     "catalogo.catalogo.autores": {
@@ -69,7 +69,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Autores"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/index.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/index.html"
     },
     "catalogo.catalogo.autoresNew": {
         "url": "/autores/new",
@@ -77,7 +77,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Autores"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
     },
     "catalogo.catalogo.autoresEdit": {
         "url": "/autores/:id/edit",
@@ -85,7 +85,7 @@ app.constant('ROUTERS2', {
             "section": "Catálogo",
             "page": "Autores"
         },
-        "templateUrl": "ioteca_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
     }
 
 });

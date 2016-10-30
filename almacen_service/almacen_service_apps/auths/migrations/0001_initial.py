@@ -7,7 +7,7 @@ import django.core.validators
 from django.db import migrations, models
 import django.db.models.deletion
 import django.utils.timezone
-import ioteca_service_apps.auths.models.user
+import almacen_service_apps.auths.models.user
 import uuid
 
 
@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
                 'permissions': (('list_user', 'Can list user'), ('get_user', 'Can get user')),
             },
             managers=[
-                ('objects', ioteca_service_apps.auths.models.user.UserManager()),
+                ('objects', almacen_service_apps.auths.models.user.UserManager()),
             ],
         ),
         migrations.CreateModel(
