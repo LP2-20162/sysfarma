@@ -53,8 +53,9 @@ INSTALLED_APPS = [
     'almacen_service_apps.auths',
     'almacen_service_apps.auths_api',
 
-    'almacen_service_apps.catalogo',
-    'almacen_service_apps.catalogo_api',
+
+    'almacen_service_apps.repositorio',
+    'almacen_service_apps.repositorio_api',
 
 ]
 

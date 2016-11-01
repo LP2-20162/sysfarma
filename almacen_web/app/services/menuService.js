@@ -90,19 +90,20 @@ app
     });
 
 
+
     sections.push({
 
         menu: [{
-            title: 'Catálogo',
+            title: 'Repositorio',
             type: 'toggle',
-            state: 'catalogo.catalogo',
+            state: 'repositorio.repositorio',
             menu_items: [{
-                title: 'Categorías',
-                state: 'catalogo.catalogo.categorias',
+                title: 'Repositorio Farmacia',
+                state: 'repositorio.repositorio.farmacias',
                 type: 'link'
             }, {
-                title: 'Autores',
-                state: 'catalogo.catalogo.autores',
+                title: 'Almacen',
+                state: 'repositorio.repositorio.almacens',
                 type: 'link'
             }, ]
         }]
@@ -119,10 +120,6 @@ app
     }, function(error) {
         console.log("error in menuService.authService.getMenu():" + JSON.stringify(error));
     });
-
-
-
-
 
 
 

@@ -3,8 +3,8 @@
         "url": "/xxx",
         "templateUrl": "templates/xxx.html"
     },
-    "catalogo": {
-        "url": "/catalogo",
+    "repositorio": {
+        "url": "/repositorio",
         "views": {
             "": {
                 "templateUrl": "app/views/layout.html"
@@ -18,59 +18,59 @@
         }
     },
 
-    "catalogo.catalogo": {
-        "url": "/catalogo",
+    "repositorio.repositorio": {
+        "url": "/repositorio",
         "template": "<div ui-view ></div>"
     },
 
-    "catalogo.catalogo.categorias": {
-        "url": "/categorias",
+    "repositorio.repositorio.farmacias": {
+        "url": "/farmacias",
         "data": {
-            "section": "Catálogo",
-            "page": "Categorías"
+            "section": "Repositorio",
+            "page": "Farmacias"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/index.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/index.html"
     },
-    "catalogo.catalogo.categoriasNew": {
-        "url": "/categorias/new",
+    "repositorio.repositorio.farmaciasNew": {
+        "url": "/farmacias/new",
         "data": {
-            "section": "Catálogo",
-            "page": "Categorías"
+            "section": "Repositorio",
+            "page": "Farmacias"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
     },
-    "catalogo.catalogo.categoriasEdit": {
-        "url": "/categorias/:id/edit",
+    "repositorio.repositorio.farmaciasEdit": {
+        "url": "/farmacias/:id/edit",
         "data": {
-            "section": "Catálogo",
-            "page": "Categorías"
+            "section": "Repositorio",
+            "page": "Farmacias"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/farmacias/form.html"
     },
 
-    "catalogo.catalogo.autores": {
-        "url": "/autores",
+    "repositorio.repositorio.almacens": {
+        "url": "/almacens",
         "data": {
-            "section": "Catálogo",
-            "page": "Autores"
+            "section": "Repositorio",
+            "page": "almacens"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/index.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/almacens/index.html"
     },
-    "catalogo.catalogo.autoresNew": {
-        "url": "/autores/new",
+    "repositorio.repositorio.almacensNew": {
+        "url": "/almacens/new",
         "data": {
-            "section": "Catálogo",
-            "page": "Autores"
+            "section": "Repositorio",
+            "page": "almacens"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/almacens/form.html"
     },
-    "catalogo.catalogo.autoresEdit": {
-        "url": "/autores/:id/edit",
+    "repositorio.repositorio.almacensEdit": {
+        "url": "/almacens/:id/edit",
         "data": {
-            "section": "Catálogo",
-            "page": "Autores"
+            "section": "Repositorio",
+            "page": "almacens"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/almacens/form.html"
     }
 
 }

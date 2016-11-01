@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 
     url(r'^api/auths/', include('almacen_service_apps.auths_api.urls')),
-    url(r'^api/catalogo/', include('almacen_service_apps.catalogo_api.urls')),
+    url(r'^api/repositorio/', include('almacen_service_apps.repositorio_api.urls')),
 ]
