@@ -1,7 +1,7 @@
 app
 
-    .factory("catalogoService", function($resource, configCatalogo) {
-    var url = configCatalogo.catalogoUrl;
+    .factory("repositorioService", function($resource, configRepositorio) {
+    var url = configRepositorio.repositorioUrl;
     return {
 
         Categoria: $resource(url + "categorias/:id/", { 'id': '@id' }, {

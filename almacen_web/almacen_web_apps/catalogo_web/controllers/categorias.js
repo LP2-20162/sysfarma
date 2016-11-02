@@ -11,7 +11,7 @@ app
 
     $scope.list = function(params) {
         $scope.isLoading = true;
-        catalogoService.Categoria.query(params, function(r) {
+        repositorioService.Categoria.query(params, function(r) {
             $scope.lista = r;
             //$scope.options = r.options;
             $scope.isLoading = false;
@@ -35,7 +35,7 @@ app
 
     $scope.delete = function(d) {
         if ($window.confirm("Seguro?")) {
-            catalogoService.Categoria.delete({ id: d.id }, function(r) {
+            repositorioService.Categoria.delete({ id: d.id }, function(r) {
                 $log.log("Se eliminó la categoría:" + JSON.stringify(d));
                 toastr.success('Se eliminó la categoría ' + d.nombre, 'Categoría');
                 $scope.list(params);
@@ -51,12 +51,12 @@ app
 // =========================================================================
 // Create and Update Categoria
 // =========================================================================
-.controller("CategoriaSaveCtrl", function($scope, $state, $stateParams, catalogoService, $window, $mdDialog, $log, toastr) {
+.controller("CategoriaSaveCtrl", function($scope, $state, $stateParams, repositorioService, $window, $mdDialog, $log, toastr) {
     //Valores iniciales
     $scope.categoria = {};
 
     $scope.sel = function() {
-        catalogoService.Categoria.get({ id: $stateParams.id }, function(r) {
+        repositorioService.Categoria.get({ id: $stateParams.id }, function(r) {
             $scope.categoria = r;
         }, function(err) {
             $log.log("Error in get:" + JSON.stringify(err));
@@ -69,19 +69,19 @@ app
 
     $scope.save = function() {
         if ($scope.categoria.id) {
-            catalogoService.Categoria.update({ id: $scope.categoria.id }, $scope.categoria, function(r) {
+            repositorioService.Categoria.update({ id: $scope.categoria.id }, $scope.categoria, function(r) {
                 $log.log("r: " + JSON.stringify(r));
                 toastr.success('Se editó la categoría ' + r.nombre, 'Categoría');
-                $state.go('catalogo.catalogo.categorias');
+                $state.go('repositorio.repositorio.categorias');
             }, function(err) {
                 $log.log("Error in update:" + JSON.stringify(err));
                 toastr.error(err.data.detail, err.status + ' ' + err.statusText);
             });
         } else {
-            catalogoService.Categoria.save($scope.categoria, function(r) {
+            repositorioService.Categoria.save($scope.categoria, function(r) {
                 $log.log("r: " + JSON.stringify(r));
                 toastr.success('Se insertó la categoría ' + r.nombre, 'Categoría');
-                $state.go('catalogo.catalogo.categorias');
+                $state.go('repositorio.repositorio.categorias');
             }, function(err) {
                 $log.log("Error in save:" + JSON.stringify(err));
                 toastr.error(err.data.detail, err.status + ' ' + err.statusText);
@@ -90,6 +90,6 @@ app
     };
 
     $scope.cancel = function() {
-        $state.go('catalogo.catalogo.categorias');
+        $state.go('repositorio.repositorio.categorias');
     };
 });

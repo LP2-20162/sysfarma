@@ -1,16 +1,16 @@
-﻿var catalogoUrl = 'http://localhost:9000/api/catalogo/';
+﻿var catalogoUrl = 'http://localhost:9000/api/repositorio/';
 
 
 var config = {
 
-    catalogoUrl: catalogoUrl,
+    repositorioUrl: repositorioUrl,
 
 
 };
 
 app
 
-    .value('configCatalogo', config);
+    .value('configRepositorio', config);
 
 
 app.constant('ROUTERS2', {
@@ -18,8 +18,8 @@ app.constant('ROUTERS2', {
         "url": "/xxx",
         "templateUrl": "templates/xxx.html"
     },
-    "catalogo": {
-        "url": "/catalogo",
+    "repositorio": {
+        "url": "/repositorio",
         "views": {
             "": {
                 "templateUrl": "app/views/layout.html"
@@ -33,59 +33,59 @@ app.constant('ROUTERS2', {
         }
     },
 
-    "catalogo.catalogo": {
-        "url": "/catalogo",
+    "repositorio.repositorio": {
+        "url": "/repositorio",
         "template": "<div ui-view ></div>"
     },
 
-    "catalogo.catalogo.categorias": {
+    "repositorio.repositorio.categorias": {
         "url": "/categorias",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/index.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/categorias/index.html"
     },
-    "catalogo.catalogo.categoriasNew": {
+    "repositorio.repositorio.categoriasNew": {
         "url": "/categorias/new",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/categorias/form.html"
     },
-    "catalogo.catalogo.categoriasEdit": {
+    "repositorio.repositorio.categoriasEdit": {
         "url": "/categorias/:id/edit",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Categorías"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/categorias/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/categorias/form.html"
     },
 
-    "catalogo.catalogo.autores": {
+    "repositorio.repositorio.autores": {
         "url": "/autores",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/index.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/autores/index.html"
     },
-    "catalogo.catalogo.autoresNew": {
+    "repositorio.repositorio.autoresNew": {
         "url": "/autores/new",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/autores/form.html"
     },
-    "catalogo.catalogo.autoresEdit": {
+    "repositorio.repositorio.autoresEdit": {
         "url": "/autores/:id/edit",
         "data": {
-            "section": "Catálogo",
+            "section": "Repositorio",
             "page": "Autores"
         },
-        "templateUrl": "almacen_web_apps/catalogo_web/views/autores/form.html"
+        "templateUrl": "almacen_web_apps/repositorio_web/views/autores/form.html"
     }
 
 });
